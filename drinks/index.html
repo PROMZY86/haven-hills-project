@@ -36,6 +36,7 @@
     <script type="text/javascript" src="/js/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="/js/reveal-on-scroll.js" defer="defer"></script>
     <script type="text/javascript" src="/js/include.js" defer="defer"></script>
+
 </head>
 <body>
 
@@ -182,6 +183,65 @@
 </li>
 </ul>
 
+<section class="booking-form">
+ 
+  <form class="booking-container">
+    
+    <div class="form-group">
+    
+       
+      <label>Check In</label>
+      <input type="text" id="check-in" placeholder="Check In">
+       
+
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="form-group">
+
+      <label>Check Out</label>
+  <input type="text" id="check-out" placeholder="Check Out">
+    </div>
+
+    <div class="divider"></div>
+
+       <div class="form-group guest-selector">
+     <label>Guests</label>
+      <p class="guest-info" id="guestInfo">1 Room, 1 Adult, 0 Child</p>
+
+        <div class="guest-dropdown" id="guestDropdown">
+    <div class="guest-row">
+      <span>Rooms</span>
+      <div class="controls">
+        <button type="button" class="minus" data-type="room">−</button>
+        <span id="roomCount">1</span>
+        <button type="button" class="plus" data-type="room">+</button>
+      </div>
+    </div>
+    <div class="guest-row">
+      <span>Adults</span>
+      <div class="controls">
+        <button type="button" class="minus" data-type="adult">−</button>
+        <span id="adultCount">1</span>
+        <button type="button" class="plus" data-type="adult">+</button>
+      </div>
+    </div>
+    <div class="guest-row">
+      <span>Children</span>
+      <div class="controls">
+        <button type="button" class="minus" data-type="child">−</button>
+        <span id="childCount">0</span>
+        <button type="button" class="plus" data-type="child">+</button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+    <button type="submit" class="check-btn">Check Availability</button>
+  </form>
+</section>
+
 
   </div>
 
@@ -325,6 +385,111 @@
   
 </section>
 
+ <section class="quote-section">
+  <div class="quote-container">
+  <p id="quote-text" style="opacity: 0;"></p>
+  <div class="image-wrapper" style="opacity: 0;">
+    <img id="quote-img" src="/assets/images/haven-hill-menu-images/tomato_salad.jpg" alt="Motivational Food">
+  </div>
+</div>
+
+ </section>
+
+ <section class="drinks-section">
+   <div class="drinks-section-container">
+     <div class="menu-column">
+    <h2>LIQUOR</h2>
+    <ul>
+      <li>✔ Campari Big - ₦20,000</li>
+      <li>✔ Bicardi Big - ₦25,000</li>
+      <li>✔ Bacardi Rum  - ₦20,000</li>
+      <li>✔ Jameson (Big) - ₦100,000</li>
+      <li>✔ Glenfiddich 12 - ₦90,000</li>
+      <li>✔ Absolute Vodka - ₦80,000</li>
+      <li>✔  Captain Morgan - ₦90,000</li>
+      <li>✔ Bailey Bigs - ₦20,000</li>
+    </ul>
+  </div>
+
+  <div class="menu-column">
+    <h2>VODKA</h2>
+    <ul>
+      <li>✔ Absolute Vodka - ₦10,000</li>
+      <li>✔ Gordon Dry Gin  - ₦10,000</li>
+      <li>✔ Sky Vodka - ₦25,000</li>
+      <li>✔ Prada Vodka ₦15,000</li>
+   </ul>
+  </div> 
+   </div>
+  
+</section>
+
+<section class="drinks-section">
+   <div class="drinks-section-container">
+     <div class="menu-column">
+    <h2>BEER</h2>
+    <ul>
+      <li>✔ Small Sout - ₦2,000</li>
+      <li>✔ Origin - ₦2,000</li>
+      <li>✔ Goldberg - ₦2,500</li>
+      <li>✔ Smirnoff Ice VS - ₦2,500</li>
+      <li>✔ Budwierser - ₦2,000</li>
+      <li>✔ Star - ₦2,000</li>
+      <li>✔ Star Radler  - ₦2,000</li>
+      <li>✔ Gulder - ₦2,000</li>
+      <li>✔ Throphy - ₦2,000</li>
+      <li>✔ Heineken - ₦2,000</li>
+   
+    </ul>
+  </div>
+
+  <div class="menu-column">
+    <h2>ENERGY DRINKS</h2>
+    <ul>
+      <li>✔ Red Bull - ₦4,000</li>
+      <li>✔ Power Horse - ₦4,000</li>
+      <li>✔ Origin Pet  - ₦2,000</li>
+      <li>✔ Black Bullet - ₦4,000</li>
+     
+    </ul>
+  </div> 
+   </div>
+  
+</section>
+
+<section class="drinks-section">
+   <div class="drinks-section-container">
+     <div class="menu-column">
+    <h2>RED/WHITE WINE</h2>
+    <ul>
+      <li>✔ Baron Romero - ₦12,000</li>
+      <li>✔ B&G Cuvee Speciale - ₦30,000</li>
+      <li>✔ Hardys Stamp - ₦12,000</li>
+      <li>✔ Carlo Rossi  VS - ₦30,000</li>
+      <li>✔ Classic Red - ₦12,000</li>
+      <li>✔  Nite Train - ₦25,000</li>
+      <li>✔  Escudo Rojo - ₦30,000</li>
+      <li>✔  chamdor - ₦20,000</li>
+      <li>✔  Bree - ₦3,000</li>
+      <li>✔  Straw Hat#  - ₦3,000</li>
+      <li>✔  Pet origin  - ₦2,000</li>
+      <li>✔  Martini Rosso  - ₦20,000</li>
+      <li>✔ Jameson Green - ₦50,000</li>
+      <li>✔ Jack Daniels - ₦55,000</li>
+      <li>✔ Ciroc Vodka - ₦45,000</li>
+      <li>✔ Black Label - ₦80,000</li>
+      <li>✔ Gentleman Jack - ₦45,000</li>
+    </ul>
+  </div>
+
+  <div class="menu-column">
+    
+  </div> 
+   </div>
+  
+</section>
+ 
+
 
 
 <section class="element-front-desk-section">
@@ -419,6 +584,8 @@
 </section>
 
 
+
+
        
 
 
@@ -455,7 +622,53 @@
     document.getElementById("year").textContent = new Date().getFullYear();
  </script>
 
+<script>
+const img = document.getElementById("quote-img");
+const quoteText = document.getElementById("quote-text");
+const imageWrapper = document.querySelector(".image-wrapper");
 
+const data = [
+  {
+    quote: "Let food be thy medicine, thy medicine shall be thy food.",
+    img: "/assets/images/haven-hill-menu-images/tomato_salad.JPG"
+  },
+  {
+    quote: "Feed the body that works for the money.",
+    img: "/assets/images/haven-hill-menu-images/tomato_salad.jpg"
+  },
+  {
+    quote: "Good food is the foundation of genuine happiness.",
+    img: "/assets/images/haven-hill-menu-images/tomato_salad.jpg"
+  },
+  {
+    quote: "You don’t need a silver fork to eat good food.",
+    img: "/assets/images/haven-hill-menu-images/tomato_salad.jpg"
+  }
+];
+
+let index = 0;
+
+function updateContent() {
+  
+  quoteText.style.opacity = 0;
+  imageWrapper.style.opacity = 0;
+
+  setTimeout(() => {
+    img.src = data[index].img;
+    quoteText.textContent = data[index].quote;
+
+
+    quoteText.style.opacity = 1;
+    imageWrapper.style.opacity = 1;
+
+    index = (index + 1) % data.length;
+  }, 500);
+}
+
+
+updateContent();
+setInterval(updateContent, 4000);
+</script>
 
 
 

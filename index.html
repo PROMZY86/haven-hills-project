@@ -201,14 +201,37 @@
 
     <div class="divider"></div>
 
-    <div class="form-group">
- 
-      
-        <label>Guests</label>
-      <p class="guest-info">1 Room, 1 Adult, 0 Child</p>
-      
-  
+       <div class="form-group guest-selector">
+     <label>Guests</label>
+      <p class="guest-info" id="guestInfo">1 Room, 1 Adult, 0 Child</p>
+
+        <div class="guest-dropdown" id="guestDropdown">
+    <div class="guest-row">
+      <span>Rooms</span>
+      <div class="controls">
+        <button type="button" class="minus" data-type="room">−</button>
+        <span id="roomCount">1</span>
+        <button type="button" class="plus" data-type="room">+</button>
+      </div>
     </div>
+    <div class="guest-row">
+      <span>Adults</span>
+      <div class="controls">
+        <button type="button" class="minus" data-type="adult">−</button>
+        <span id="adultCount">1</span>
+        <button type="button" class="plus" data-type="adult">+</button>
+      </div>
+    </div>
+    <div class="guest-row">
+      <span>Children</span>
+      <div class="controls">
+        <button type="button" class="minus" data-type="child">−</button>
+        <span id="childCount">0</span>
+        <button type="button" class="plus" data-type="child">+</button>
+      </div>
+    </div>
+  </div>
+  </div>
 
     <button type="submit" class="check-btn">Check Availability</button>
   </form>
@@ -273,8 +296,9 @@
           </div>
 </section>
 
-<section class="booking-form">
-  <form class="booking-container">
+<!--  -->
+<section class="booking-form2">
+  <form class="booking-container2">
     <div class="form-group">
       <span class="icon"><i class="far fa-calendar"></i></span>
        
@@ -781,7 +805,7 @@ No matter where you are, we’ll transport your taste buds on an unforgettable a
         </div>
 
         <div class="element-menu-section-content-box-1">
-          <img src="assets/images/haven-hill-menu-images/" 
+          <img src="assets/images/haven-hill-menu-images/banga-soup.jpg" 
           alt="menu" width="250" height="250">
           <div class="element-menu-section-info">
             <h5>Banga Soup</h5>
@@ -1110,7 +1134,7 @@ No matter where you are, we’ll transport your taste buds on an unforgettable a
 
   <div class="element-haven-hill-brand">
     <p style="color: var(--main-site-hdr); font-size: var(--main-site-font-size);">Built and Designed by</p>
-    <a href="https://promzy-portfolio.vercel.app/">Promzy For All</a>
+    <a href="https://promzy-portfolio.vercel.app/"> Promzy For All</a>
 
   </div>
 </div>

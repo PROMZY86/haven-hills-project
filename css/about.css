@@ -323,7 +323,7 @@ img{
 .element-numbers-counter-text-contents-wrapper{
     position: absolute;
     text-align: center;
-    top: 30%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 500;
@@ -388,7 +388,7 @@ img{
 
 .element-numbers-counter-section .element-numbers-section-wrapper 
 .element-numbers-count-wrapper .element-numbers-count h2{
-    font-size: 2.8rem;
+    font-size: 3.5rem;
     color: var(--main-site-hdr);
     z-index: 300;
     transition: opacity 1.2s ease-out, transform 1.2s ease-out;
@@ -407,9 +407,13 @@ img{
 .element-numbers-count-wrapper{
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-   top: 65%;
+   top: 70%;
    grid-gap: 40px;
+}
 
+.element-numbers-counter-section .element-numbers-section-wrapper
+.element-numbers-counter-text-contents-wrapper{
+    top: 25%;
 }
 .element-numbers-counter-section .element-numbers-section-wrapper 
 .element-numbers-count-wrapper .element-numbers-count h2{
@@ -418,8 +422,9 @@ img{
 
 .element-numbers-counter-section .element-numbers-section-wrapper
 .element-numbers-counter-text-contents-wrapper h2{
-    font-size: 1.5rem;
-}
+    font-size: 2rem;
+    margin-top: 30px;
+  }
 }
 
 /* facilities section styling */

@@ -124,6 +124,8 @@ function closeDetails(){
     moDal.classList.remove("show");
     setTimeout(() => {moDal.style.display = "none"}, 500)
 }
-    
+
+
+
 
 

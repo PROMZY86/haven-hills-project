@@ -175,31 +175,43 @@ body{
   display: none;
  }
 
- .side-nav .booking-form{
+  .side-nav .booking-form{
   z-index: 500;
-  background-color: transparent;
- }
-
-  .side-nav .booking-form input {
-    background: transparent;
-    border: 1px solid white;
-    padding: 10px 40px;
-  }
-
-  .side-nav .booking-form  .guest-info{
-      background: transparent;
-    border: 1px solid white;
-    padding: 10px 56px;
+  /* background-color: transparent; */
+ 
 }
 
-   .side-nav .booking-form  .check-btn{
+.side-nav .booking-form .booking-container input {
+    background: transparent;
+    border: 1px solid var(--main-site-h1-h2);
+    padding: 10px 40px;
+     width: inherit;
+   
+    }
+
+  .form-group{
+     width: 100%;
+    }
+
+  .side-nav .booking-form  .guest-info{
+    background: transparent;
+    border: 1px solid var(--main-site-h1-h2);
+    padding: 13px 60px;
+    width: 100%;
+  }
+
+  .side-nav .booking-form  .check-btn{
     background: var(--main-site-h1-h2);
      width: 100%;
+     margin-top: 20px;
+       padding: 13px 60px;
    }
    
-     .side-nav .booking-form  label{
+  .side-nav .booking-form  label{
       color: white;
-     }
+      margin-top: 10px;
+      font-size: 18px;
+     } 
 
 
 .side-nav::before {
@@ -617,20 +629,19 @@ body.no-scroll {
 }
 
 /*  */
-.booking-form {
+ .booking-form2{
   background-color: var(  --main-site-background1);
   padding: 20px;
   display: flex;
   justify-content: center;
   box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+ 
 }
 
-.booking-container {
+.booking-container2 {
   display: flex;
   align-items: center;
   gap: 30px;
-  flex-wrap: wrap;
- 
 }
 
 .form-group {
@@ -684,8 +695,8 @@ input[type="date"] {
   background-color: var(--main-site-h1-h2);
   color: #fff;
   border: none;
-  /* margin-left: 10px; */
-  padding: 10px 40px;
+  padding: 10px 20px;
+  width: 100%;
   font-size: var(--main-site-font-size);
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -703,7 +714,7 @@ input[type="date"] {
 }
 
 .guest-info {
-  font-size: 14px;
+  font-size: 10px;
   margin-top: 5px;
 }
 
@@ -748,10 +759,10 @@ input[type="date"] {
 .controls span {
   width: 20px;
   text-align: center;
-}
+} 
 
 @media (max-width: 768px) {
-  .booking-container {
+  .booking-container2 {
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
