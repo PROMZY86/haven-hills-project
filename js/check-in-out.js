@@ -105,3 +105,6 @@ const checkInCalendar = flatpickr("#check-in");
   // Initialize
   updateGuestInfo();
 });
+
+
+ 

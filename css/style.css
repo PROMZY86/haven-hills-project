@@ -714,8 +714,9 @@ input[type="date"] {
 }
 
 .guest-info {
-  font-size: 10px;
+  font-size: 15px;
   margin-top: 5px;
+  word-spacing: 3px;
 }
 
 .guest-dropdown {
