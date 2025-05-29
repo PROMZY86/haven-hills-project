@@ -27,6 +27,38 @@
     <link rel="icon" type="image/png" href="favicon-16x16.png" >
 
     
+    <style>
+        #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10000;
+      transition: opacity 0.5s ease;
+    }
+  
+    .spinner {
+      width: 50px;
+      height: 50px;
+      /* border: 6px solid  var(--main-site-hdr); */
+      border-bottom: 6px solid  var(--main-site-text);
+      border-top: 6px solid var(--main-site-h1-h2);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+   </style>
+
+
     <script type="text/javascript" src="/js/script.js" defer="defer"></script>
     <script type="text/javascript" src="/js/swiper.js" defer="defer"></script>
     <script type="text/javascript" src="/js/all.min.js" defer="defer"></script>
@@ -37,7 +69,13 @@
     <script type="text/javascript" src="/js/check-in-out.js" defer="defer"></script>
 </head>
 
-<body>
+<body class="loading">
+
+<div id="preloader">
+  <div class="spinner"></div>
+
+</div>
+
 
   <!-- Header -->
   <header class="top-header" id="top-head">
@@ -831,7 +869,7 @@ No matter where you are, we’ll transport your taste buds on an unforgettable a
         <img src="assets/images/haven-hill-menu-images/Eforiro_soup.jpg" alt="menu6" width="250" height="250">
         <div class="element-menu-section-info">
           <h5>Eforiro Soup</h5>
-          <p>A Nigerian Delicacy dish check it out in our Menu.</p>
+          <p>A Nigerian Delicacy dish check it out in our Menu.</p> 
         </div>
       </div>
     </div>
@@ -851,7 +889,7 @@ No matter where you are, we’ll transport your taste buds on an unforgettable a
         alt="menu8" width="250" height="250">
         <div class="element-menu-section-info">
           <h5>Pasta</h5>
-          <p>Check our Pasta delicacy in our Restaurant Menu. </p>
+          <p>Check our Pasta delicacy in our Restaurant Menu. </p> 
         </div>
       </div>
 
@@ -1136,15 +1174,40 @@ No matter where you are, we’ll transport your taste buds on an unforgettable a
 </div>
 
 
- <button id="element-scroll-to-top-btn" onclick="scrollToTop()">&#8679;</button>
+ <button id="element-scroll-to-top-btn" onclick="scrollToTop()">&#8679;</button> 
 
 
+
+
+ <script>
+  const preloader = document.getElementById("preloader");
+
+    if (sessionStorage.getItem("preloaderShown")) {
+    
+      preloader.style.display = "none";
+    } else {
+      window.addEventListener("load", function () {
+        setTimeout(() => {
+          preloader.style.opacity = "0";
+          preloader.style.pointerEvents = "none";
+          setTimeout(() => {
+            preloader.remove();
+          }, 600); 
+        }, 4000); 
+        sessionStorage.setItem("preloaderShown", "true");
+      });
+    }
+
+</script>
 
  <script>
     document.getElementById("year").textContent = new Date().getFullYear();
  </script>
 
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+
+
 
 </body>
 </html>

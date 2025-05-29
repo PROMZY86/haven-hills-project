@@ -12,6 +12,9 @@ body{
     height: 2000px; /* To enable scrolling */
 }
 
+
+
+
 /* Header styling */
 .top-header {
   position: fixed;
@@ -632,7 +635,7 @@ body.no-scroll {
  .booking-form2{
   background-color: var(  --main-site-background1);
   padding: 20px;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   box-shadow: 0 5px 20px rgba(0,0,0,0.1);
  
@@ -642,6 +645,10 @@ body.no-scroll {
   display: flex;
   align-items: center;
   gap: 30px;
+  justify-content: center;
+  /* border: 1px solid red; */
+  max-width: 950px;
+  margin: 0 auto;
 }
 
 .form-group {
@@ -680,8 +687,7 @@ input[type="date"] {
 }
 
 .guest-info {
-  margin-bottom: 5px;
-  font-size: 13px;
+  font-size: 11px;
   color: var(--main-site-hdr);
 }
 

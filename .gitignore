@@ -16,4 +16,4 @@ Thumbs.db
 node_modules/
 
 # Ignore WAMP/Server-specific files (if needed)
-wampserver.conf
+wampserver.conf  
